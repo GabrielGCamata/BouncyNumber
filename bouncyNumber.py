@@ -9,7 +9,7 @@
 # print(num%10)
 
 #           Função para ver se o numero é Saltitante
-def eh_bouncy(num):
+def bouncy(num):
     numeroDireita = num % 10 # número mais a direita
     numeroEsquerda = 0 # penultimo número mais a direita
     sequenciaIncremental = 0  # flag para ver se é crescente
@@ -30,12 +30,12 @@ def eh_bouncy(num):
     return 0
 
 ### testando a funcao
-# if (eh_bouncy(631) == 1):
+# if (bouncy(631) == 1):
 #     print("numero saltitante")
 # else:
 #     print("numero nao é saltitante")
 
-# if (eh_bouncy(567) == 1):
+# if (bouncy(567) == 1):
 #     print("numero saltitante")
 # else:
 #     print("numero nao é saltitante")
@@ -45,7 +45,7 @@ def porcentagem(proporcao):
     count = 0
     number = 99
     while count < proporcao/100 * number :
-        if eh_bouncy(number):
+        if bouncy(number):
             count += 1
         if count < proporcao/100 * number :
             number += 1
