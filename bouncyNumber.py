@@ -43,12 +43,12 @@ def bouncy(num):
 #### Encontra o numero que a proporcao de bouncy number é passado
 def porcentagem(proporcao):
     count = 0
-    number = 99
-    while count < proporcao/100 * number :
+    number = 100 # inicia de 100
+    while count < proporcao/100 * number : # Enquanto nao chegar a porcentagem - Regra de 3
         if bouncy(number):
-            count += 1
+            count += 1 #conta a quantidade de BouncyNumber
         if count < proporcao/100 * number :
-            number += 1
+            number += 1 # incrementa o numero
     return number
 
 print(porcentagem(99))
